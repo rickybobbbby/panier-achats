@@ -1,21 +1,23 @@
-import './ListeProduits.css';
+import './ListeProduits.scss';
+import Produit from './Produit';
+import lesProduits from './data/produits.json';
 
 export default function ListeProduits() {
+  
+
+  // metode 1 (programation imperative, avec boucle for)
+  //let composantsProduits = [];
+  //for (let i = 0; i < lesProduits.length; i++) {
+  //composantsProduits.push(<Produit nom={lesProduits[i].nom} prix={lesProduits[i].prix} pid={lesProduits[i].id}/>)
+  //}
     return (
         <section className="ListeProduits">
-        <h2>Nos produits</h2>
-        <div>
-          <article>
-              <img src="" alt="" />
-              <div className="titre">titre du produits</div>
-              <div className="prix">13.59</div>
-              <button>ajouter au panier</button>
-          </article>
-          <article>Produit 2</article>
-          <article>Produit 3</article>
-          <article>Produit 4</article>
-          <article>Produit 5</article>
-        </div>
+          <h2>Nos produits</h2>
+          <div className="produits">
+            {
+              lesProduits.map(produit => <Produit key={produit.id} nom={produit.nom} prix={produit.prix} pid={produit.id}/>)
+            }
+          </div>
       </section>
     );
 }
