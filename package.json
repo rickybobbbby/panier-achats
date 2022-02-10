@@ -1,5 +1,6 @@
 {
-  "homepage": "https://rickybobbbby.github.io/panier-achats",
+  "starter-need-to-be-in-homepage": "https://rickybobbbby.github.io/panier-achats",
+  "homepage": "",
   "name": "panier-achats",
   "version": "0.1.0",
   "private": true,

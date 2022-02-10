@@ -1,4 +1,20 @@
 .Entete{
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    background-color:rgb(59, 59, 59);
+    color: rgb(255, 255, 255);
+    h1 {
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+    }
+    nav{
+        padding: 1rem 2rem;
+        a {
+            padding-left: 0.75rem;
+            font-size: 1rem;
+        }
+    }
 }

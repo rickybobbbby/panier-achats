@@ -2,7 +2,7 @@ import './PiedPage.scss';
 
 export default function PiedPage() {
     return (
-        <footer>
+        <footer className="PiedPage">
             &copy;{new Date().getFullYear()} - TIM Maisonneuve - Tous droits réservés
         </footer>
     );
