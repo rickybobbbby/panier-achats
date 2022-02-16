@@ -2,7 +2,7 @@ import './ListeProduits.scss';
 import Produit from './Produit';
 import lesProduits from './data/produits.json';
 
-export default function ListeProduits() {
+export default function ListeProduits(props) {
   
 
   // metode 1 (programation imperative, avec boucle for)
@@ -15,7 +15,7 @@ export default function ListeProduits() {
           <h2>Nos produits</h2>
           <div className="produits">
             {
-              lesProduits.map(produit => <Produit key={produit.id} nom={produit.nom} prix={produit.prix} pid={produit.id}/>)
+              lesProduits.map(produit => <Produit panier={props.panier} setPanier={props.setPanier} key={produit.id} nom={produit.nom} prix={produit.prix} pid={produit.id}/>)
             }
           </div>
       </section>
