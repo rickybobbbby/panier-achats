@@ -1,12 +1,10 @@
 .BtnAjoutPanier {
-    background-color: rgb(110, 133, 110);
-    color: rgb(255, 255, 255);
-    padding: 0.4rem;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 5px;
+    margin: 5px;
+    background-color: seagreen;
+    color: white;
+    padding: 0.75rem;
+    border: 1px solid rgb(1, 73, 1);
+    border-radius: 3px;
     cursor: pointer;
     font-weight: bold;
-}
-.BtnAjoutPanier:hover  {
-    background-color: rgb(26, 80, 26);
 }

@@ -3,21 +3,14 @@ import Produit from './Produit';
 import lesProduits from './data/produits.json';
 
 export default function ListeProduits(props) {
-  
-
-  // metode 1 (programation imperative, avec boucle for)
-  //let composantsProduits = [];
-  //for (let i = 0; i < lesProduits.length; i++) {
-  //composantsProduits.push(<Produit nom={lesProduits[i].nom} prix={lesProduits[i].prix} pid={lesProduits[i].id}/>)
-  //}
     return (
         <section className="ListeProduits">
-          <h2>Nos produits</h2>
-          <div className="produits">
-            {
-              lesProduits.map(produit => <Produit panier={props.panier} setPanier={props.setPanier} key={produit.id} nom={produit.nom} prix={produit.prix} pid={produit.id}/>)
-            }
-          </div>
-      </section>
+            <h2>Nos produits</h2>
+            <div className="produits">
+                {
+                    lesProduits.map(p => <Produit etatPanier={props.etatPanier} key={p.id} nom={p.nom} prix={p.prix} pid={p.id} />)
+                }
+            </div>
+        </section>
     );
 }

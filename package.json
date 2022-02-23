@@ -1,11 +1,11 @@
 {
-  "homepage-GITHUBPAGEAENLEVER": "https://rickybobbbby.github.io/panier-achats",
+  "remarque-importante": "Pour publier sur GH Pages, renommer la prochaine prop 'homepage'",
+  "homepage-ghpages": "https://rickybobbbby.github.io/panier-achats",
   "name": "panier-achats",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.7.1",
-    "@emotion/style": "^0.8.0",
     "@emotion/styled": "^11.6.0",
     "@mui/icons-material": "^5.4.1",
     "@mui/material": "^5.4.1",

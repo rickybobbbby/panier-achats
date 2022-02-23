@@ -12,13 +12,14 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"Composent React": {
+	"Composant React": {
 		"prefix": "comp",
 		"body": [
-			"import './${1:nom}';",
-			"export default function ${1:nom} () {",
+			"import './${1:nom}.css';",
+			"export default function ${1:nom}() {",
 			"",
 			"}"
 		]
 	}
+
 }
