@@ -8,7 +8,7 @@ export default function ListeProduits(props) {
             <h2>Nos produits</h2>
             <div className="produits">
                 {
-                    lesProduits.map(p => <Produit etatPanier={props.etatPanier} key={p.id} nom={p.nom} prix={p.prix} pid={p.id} />)
+                    lesProduits.map(p => <Produit etatPanier={props.etatPanier} setPanier={props.setPanier} key={p.id} nom={p.nom} prix={p.prix} pid={p.id} />)
                 }
             </div>
         </section>
